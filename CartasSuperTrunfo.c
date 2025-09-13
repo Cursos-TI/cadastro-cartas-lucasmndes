@@ -8,7 +8,7 @@ int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
 
   char estado1, estado2;
-  char codigoCarta1[4], codigoCarta2[4];
+  char codigoCarta1[3], codigoCarta2[3];
   char nomeCidade1[50], nomeCidade2[50];
   int populacao1, populacao2;
   float area1, area2;
@@ -19,7 +19,7 @@ int main() {
   printf("Digite os dados da primeira cidade:\n");
   printf("Estado (Uma letra de A até H): ");
   scanf(" %c", &estado1);
-  printf("Código da Carta (De 01 até 04): ");
+  printf("Código da Carta (Ex: A01 ou B02): ");
   scanf("%s", codigoCarta1);
   printf("Nome da Cidade: ");
   scanf(" %[^\n]", nomeCidade1);
@@ -35,7 +35,7 @@ int main() {
   printf("\nDigite os dados da segunda cidade:\n");
   printf("Estado (Uma letra de A até H [Não repetir a anterior]): ");
   scanf(" %c", &estado2);
-  printf("Código da Carta (De 01 até 04): ");
+  printf("Código da Carta [Diferente do anterior] (Ex: A01 ou B02): ");
   scanf("%s", codigoCarta2);
   printf("Nome da Cidade: ");
   scanf(" %[^\n]", nomeCidade2);
